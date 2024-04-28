@@ -10,6 +10,8 @@ import AllCard from "../allArtCard/AllCard";
 const Home = () => {
 
     const crafts = useLoaderData();
+
+    const ccrafts =crafts.slice(0,9);
     return (
         <div>
 
@@ -24,7 +26,7 @@ const Home = () => {
                     </div>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
                         {
-                            crafts.map(craft => <AllCard key={craft._id}
+                            ccrafts.map(craft => <AllCard key={craft._id}
                                 craft={craft}></AllCard>)
                         }
 

@@ -22,7 +22,7 @@ const Header = () => {
     const links = < >
 
         <li className="font-bold"><NavLink to="/">Home</NavLink></li>
-        <li className="font-bold"><NavLink to="/allCraft">All Art & craft Items</NavLink></li>
+        <li className="font-bold"><NavLink to="/allCraft">All Art&Craft Items</NavLink></li>
         <li className="font-bold"><NavLink to="/addCraft">Add Craft Item</NavLink></li>
         <li className="font-bold"><NavLink to="/myCraft">My Art&Craft List</NavLink></li>
 
@@ -41,7 +41,7 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="btn text-yellow-800 font-bold text-4xl">Artisan<span className='text-4xl  text-orange-700 font-bold'>A</span>venue</div>
+                <p className="btn text-yellow-800 font-bold lg:text-3xl md:text-2xl text-xl">Craftify<span className='lg:text-3xl md:text-2xl text-xl  text-orange-700 mr-0 pr-0 font-bold'>Hub</span> </p>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-lg">

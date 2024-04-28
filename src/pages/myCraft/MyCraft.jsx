@@ -112,7 +112,7 @@ const MyCraft = () => {
 
             <div className="flex justify-center items-center mb-24 ">
                 <details className="dropdown">
-                    <summary className="m-1 btn bg-green-500">Sort By <IoIosArrowDown /></summary>
+                    <summary className="m-1 btn bg-orange-600">Sort By <IoIosArrowDown /></summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 font-bold rounded-box w-52">
                         
                         <li onClick={() => handleDisplaySort('price')}><a>Price</a></li>
