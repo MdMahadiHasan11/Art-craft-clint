@@ -114,8 +114,9 @@ const MyCraft = () => {
                 <details className="dropdown">
                     <summary className="m-1 btn bg-green-500">Sort By <IoIosArrowDown /></summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 font-bold rounded-box w-52">
-                        <li onClick={() => handleDisplaySort('rating')}><a>Rating</a></li>
+                        
                         <li onClick={() => handleDisplaySort('price')}><a>Price</a></li>
+                        <li onClick={() => handleDisplaySort('rating')}><a>Rating</a></li>
                     </ul>
                 </details>
             </div>
