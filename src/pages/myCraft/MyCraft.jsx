@@ -23,7 +23,7 @@ const MyCraft = () => {
                 // displayAll(data)
             })
 
-    }, [user, item])
+    }, [user])
 
 
     const handleDelete = _id => {
@@ -66,9 +66,13 @@ const MyCraft = () => {
 
     // sorting function start
 
-
+    // const [item, setItem] = useState([]);
     const [displayAll, setDisplayAll] = useState([]);
-    // const [item, setTemp] = useState([]);
+    const [temp, setTemp] = useState([]);
+    // const [temp1, setTemp1] = useState([]);
+
+
+
 
 
 
@@ -76,24 +80,30 @@ const MyCraft = () => {
         // setTemp1(['']);
         if (sort === 'rating') {
             const sortedNumbers = item.slice().sort((a, b) => b.rating - a.rating);
-            setDisplayAll(sortedNumbers);
-            // console.log(addBooks)
+            // setTemp(sortedNumbers);
+            setDisplayAll(sortedNumbers)
+
         }
         else if (sort === 'price') {
             const sortedNumbers = item.slice().sort((a, b) => b.price - a.price);
-            setDisplayAll(sortedNumbers);
+            // setTemp(sortedNumbers);
+            setDisplayAll(sortedNumbers)
+
         }
 
     };
 
+   
+
+    useEffect(() => {
+              
+           setDisplayAll(item);
+           setTemp(item);
+                    
+    }, [item]);
 
 
 
-    // useEffect(() => {
-    //     setDisplayAll(item);
-    //     setTemp(item);
-
-    // }, [item])
     // sorting function end
 
     return (
@@ -120,7 +130,7 @@ const MyCraft = () => {
             <div>
                 <p data-aos="fade-down"
                     data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000" className="text-3xl mt-10 font-bold rounded-2xl text-center bg-yellow-700 py-8 mt-6 mb-2 text-white"> Hello {user.displayName}  <br/>Your Added Craft Items</p>
+                    data-aos-duration="1000" className="text-3xl mt-10 font-bold rounded-2xl text-center bg-yellow-700 py-8 mt-6 mb-2 text-white"> Hello {user.displayName}  <br />Your Added Craft Items</p>
             </div>
 
 
