@@ -10,6 +10,7 @@ import AddCraft from "../pages/addCraft/AddCraft";
 import MyCraft from "../pages/myCraft/MyCraft";
 import Details from "../pages/details/Details";
 import Update from "../pages/update/Update";
+import Category from "../pages/category/Category";
 
 const Routes = createBrowserRouter([
     {
@@ -20,7 +21,9 @@ const Routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch(`http://localhost:5000/addCrafts`)
+                loader: () => fetch(`http://localhost:5000/addCrafts`),
+                // loader1: () => fetch(`http://localhost:5000/category`)
+
             },
             {
                 path: '/allCraft',
@@ -43,12 +46,20 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/register',
-                element: <Register></Register>
+                element: <Register></Register>,
+                
             },
             {
                 path: '/details/:id',
                 // loader: () => fetch('/EstateData.json'),
                 element:<PrivateRoute><Details></Details></PrivateRoute> 
+                
+
+            },
+            {
+                path: '/category/:subcategory',
+                // loader: () => fetch('/EstateData.json'),
+                element:<Category></Category> ,
                 
 
             },

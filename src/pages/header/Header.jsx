@@ -14,7 +14,7 @@ const Header = () => {
     }
     console.log(user);
     // console.log(user.displayName);
-    
+
 
 
 
@@ -56,8 +56,17 @@ const Header = () => {
 
                 {
                     user && <span className="font-bold mr-4"><NavLink to="">
-                        <div className="relative group">
-                            <img src={user.photoURL ? user.photoURL :`https://i.ibb.co/qW320MT/images.jpg`} className="rounded-full w-12 h-12" />
+                        <div  data-tooltip-id="my-tooltippp" className=" relative group">
+                            <img  src={user.photoURL ? user.photoURL : `https://i.ibb.co/qW320MT/images.jpg`} className="rounded-full w-12 h-12" />
+
+                            <Tooltip
+                                id="my-tooltippp"
+                                content={user.displayName ? user.displayName : "User"}
+                                events={['hover']}
+                            />
+
+
+
                             <div className=" -left-44 transform text-green-500 rounded-full absolute inset-0  opacity-0 hover:opacity-100 transition-opacity duration-300 flex justify-center items-center  text-lg font-bold">
                                 <div>{user.displayName ? user.displayName : "User"}</div>
                             </div>

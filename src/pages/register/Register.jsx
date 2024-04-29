@@ -1,6 +1,6 @@
 // import React from 'react';
 import { Fade } from "react-awesome-reveal";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -83,6 +83,11 @@ const Register = () => {
                 toast.success("Fail to Register");
             })
     }
+
+
+
+
+    
     return (
         <div className="">
             <div>
