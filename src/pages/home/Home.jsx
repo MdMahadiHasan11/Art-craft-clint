@@ -84,11 +84,11 @@ const Home = () => {
 
 
                 {/* Item Category */}
-                <div className="container mx-auto">
+                <div className="container mt-14 mb-6 mx-auto">
                     <div>
                         <p data-aos="fade-down"
                             data-aos-easing="ease-out-cubic"
-                            data-aos-duration="1000" className="text-3xl font-bold rounded-2xl text-center bg-yellow-700 py-8 mt-6 mb-2 text-white"> Art and Craft Categories</p>
+                            data-aos-duration="1000" className=" text-3xl font-bold rounded-2xl text-center bg-yellow-700 py-8 mt-6 mb-10 text-white"> Art and Craft Categories</p>
                     </div>
 
 

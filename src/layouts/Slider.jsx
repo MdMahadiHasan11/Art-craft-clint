@@ -25,8 +25,8 @@ const Slider = () => {
                         <div className="absolute inset-0 flex items-center justify-center">
                             {/* text-[#1DD100] */}
                             <div className='lg:w-3/4 w-5/6'>
-                                <p className=" text-cyan-600 lg:text-6xl md:text-4xl text-2xl font-extrabold flex justify-center items-center mb-4"> Modern Living Spaces</p>
-                                <p className='text-center text-white font-bold lg:text-xl flex justify-center items-center mb-4'>Experience the epitome of contemporary comfort with our modern living spaces. From sleek interiors to cutting-edge amenities, our residences redefine urban living.</p>
+                                <p className=" text-cyan-700 lg:text-6xl md:text-4xl text-2xl font-extrabold flex justify-center items-center mb-4">Craft Landscape</p>
+                                <p className='text-center text-white font-bold lg:text-xl flex justify-center items-center mb-4'>Picture a serene landscape, where nature's brushstrokes paint a masterpiece of tranquility. Rolling hills stretch out like the waves of an endless sea.</p>
                             </div>
                         </div>
                     </div>
@@ -37,8 +37,8 @@ const Slider = () => {
                         <img src="https://i.ibb.co/ygZmrFz/s222.jpg" alt="Your Image" className="w-full max-h-[550px]" />
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className='lg:w-3/4 w-5/6' >
-                                <p className=" text-cyan-600 lg:text-6xl md:text-4xl text-2xl font-extrabold flex justify-center items-center mb-4"> Charming Historic Homes</p>
-                                <p className='text-center text-white font-bold lg:text-xl flex justify-center items-center mb-4'>Step back in time and embrace the charm of historic homes steeped in character and heritage. With timeless architecture and quaint neighborhoods, these homes offer a glimpse into the past while providing modern comforts for lifestyle. </p>
+                                <p className=" text-cyan-700 lg:text-6xl md:text-4xl text-2xl font-extrabold flex justify-center items-center mb-4"> Portrait Drawing</p>
+                                <p className='text-center text-white font-bold lg:text-xl flex justify-center items-center mb-4'>Drawing a portrait involves capturing the likeness, character, and essence of a person's face through artistic expression. </p>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ const Slider = () => {
                         <img src="https://i.ibb.co/KWydTVw/s333.jpg" alt="Your Image" className="w-full max-h-[550px]" />
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className='lg:w-3/4 w-5/6'>
-                                <p className=" text-cyan-600 lg:text-6xl md:text-4xl text-2xl font-extrabold flex justify-center items-center mb-4">  Luxury High-Rise Living</p>
+                                <p className=" text-cyan-600 lg:text-6xl md:text-4xl text-2xl font-extrabold flex justify-center items-center mb-4">  Water-colour Painting</p>
                                 <p className='text-center text-white font-bold lg:text-xl flex justify-center items-center mb-4'>Elevate your lifestyle to new heights with our luxury high-rise residences. Indulge in breathtaking panoramic views and upscale amenities that cater to your every need. </p>
                             </div>
                         </div>

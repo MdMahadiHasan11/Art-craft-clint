@@ -39,7 +39,7 @@ const AllCard = ({ craft }) => {
                             <p>Taka:{price}</p>
                             <p>Rating:{rating}</p>
                         </div>
-                        <div className="flex my-6 justify-between text-xl font-semibold">
+                        <div className="flex my-6 justify-between  font-semibold">
                         <p className="font-bold">
                             Availability:{stockStatus}
                         </p>
