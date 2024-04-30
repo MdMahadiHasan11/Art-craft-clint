@@ -144,32 +144,34 @@ const Home = () => {
 
                 {/* stat */}
 
-                <div className="containerb mt-14 mx-auto">
+                <div className="container mt-14 mx-auto">
                     <div>
                         <p data-aos="fade-down"
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="1000" className="text-3xl font-bold rounded-2xl text-center bg-yellow-700 py-8 mt-6 mb-10 text-white">Stat </p>
                     </div>
-                    <div className="stats shadow">
+                    <div className="flex justify-center items-center">
+                        <div className="stats shadow">
 
-                        <div className="stat place-items-center">
-                            <div className="stat-title">Successful purchase</div>
-                            <div className="stat-value">31K</div>
-                            <div className="stat-desc">From January 1st to February 1st</div>
+                            <div className="stat place-items-center">
+                                <div className="stat-title">Successful purchase</div>
+                                <div className="stat-value">31K</div>
+                                <div className="stat-desc">From January 1st to February 1st</div>
+                            </div>
+
+                            <div className="stat place-items-center">
+                                <div className="stat-title">Users</div>
+                                <div className="stat-value text-secondary">4,200</div>
+                                <div className="stat-desc text-secondary">↗︎ 40 (2%)</div>
+                            </div>
+
+                            <div className="stat place-items-center">
+                                <div className="stat-title">New Registers</div>
+                                <div className="stat-value">1,200</div>
+                                <div className="stat-desc">↘︎ 90 (14%)</div>
+                            </div>
+
                         </div>
-
-                        <div className="stat place-items-center">
-                            <div className="stat-title">Users</div>
-                            <div className="stat-value text-secondary">4,200</div>
-                            <div className="stat-desc text-secondary">↗︎ 40 (2%)</div>
-                        </div>
-
-                        <div className="stat place-items-center">
-                            <div className="stat-title">New Registers</div>
-                            <div className="stat-value">1,200</div>
-                            <div className="stat-desc">↘︎ 90 (14%)</div>
-                        </div>
-
                     </div>
 
                 </div>
