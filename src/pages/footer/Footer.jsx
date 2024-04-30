@@ -2,7 +2,7 @@
 
 const Footer = () => {
     return (
-        <div className="mt-10">
+        <div className="mt-10 font-bold">
             <footer className="footer footer-center p-10 bg-base-300 text-base-content rounded">
                 <nav className="grid grid-flow-col gap-4">
                     <a className="link link-hover">About us</a>
@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                 </nav>
                 <aside>
-                    <p>Copyright © 2024 - All right reserved by LivingNexus Ltd</p>
+                    <p>Copyright © 2024 - All right reserved by Craftify Hub Ltd</p>
                 </aside>
             </footer>
 
