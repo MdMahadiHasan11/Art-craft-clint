@@ -74,8 +74,8 @@ const MyCraft = () => {
 
 
 
- const yesItem = item.filter(item => item.customization === "yes")
- const noItem = item.filter(item => item.customization === "no")
+ const yesItem = item.filter(item => item.customization === "Yes")
+ const noItem = item.filter(item => item.customization === "No")
 
     const handleDisplaySort = sort => {
         // setTemp1(['']);
