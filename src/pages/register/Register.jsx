@@ -89,7 +89,7 @@ const Register = () => {
 
     
     return (
-        <div className="">
+        <div className="mt-10">
             <div>
                 <div className="text-center lg:text-left">
                     <div className="flex justify-center items-center">

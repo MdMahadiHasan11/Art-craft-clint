@@ -22,7 +22,7 @@ const Home = () => {
 
     const [categoryData, setCategoryData] = useState();
     useEffect(() => {
-        fetch('http://localhost:5000/category')
+        fetch('https://art-craft-server-cyan.vercel.app/category')
             .then(response => response.json())
             .then(data => {
                 setCategoryData(data);

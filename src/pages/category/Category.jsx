@@ -17,7 +17,7 @@ const Category = () => {
     const [item, setItem] = useState([]);
     useEffect(() => {
 
-        fetch(`http://localhost:5000/category/${subcategory}`)
+        fetch(`https://art-craft-server-cyan.vercel.app/category/${subcategory}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);

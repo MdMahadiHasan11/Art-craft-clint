@@ -12,7 +12,7 @@ const Details = () => {
     const [products, setProducts] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/details/${id}`)
+        fetch(`https://art-craft-server-cyan.vercel.app/details/${id}`)
             .then(res => res.json())
             .then(data => {
                 setProducts(data);

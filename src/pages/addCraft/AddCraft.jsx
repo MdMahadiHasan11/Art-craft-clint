@@ -39,7 +39,7 @@ const AddCraft = () => {
 
         // send data
 
-        fetch('http://localhost:5000/addCrafts', {
+        fetch('https://art-craft-server-cyan.vercel.app/addCrafts', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -87,7 +87,7 @@ const AddCraft = () => {
     }
 
     return (
-        <div className="bg-[#F4F3F0] mt-10">
+        <div className=" bg-slate-100 mt-10">
             <div>
                 <div className="text-center lg:text-left">
                     <div className="flex justify-center items-center"

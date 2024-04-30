@@ -9,18 +9,18 @@ const AllArtCraft = () => {
 
     return (
 
-        <div className="overflow-x-auto">
+        <div className="mt-10 overflow-x-auto">
             <table className="table">
                 {/* head */}
                 <thead >
-                    <tr >
-                        <th className="text-lg font-bold" >
+                    <tr className=" border-2" >
+                        <th className="text-lg border-2 font-bold" >
                             Si No
                         </th >
-                        <th className="text-lg font-bold">Item Name</th>
-                        <th className="text-lg font-bold">Category</th>
-                        <th className="text-lg font-bold">Price</th>
-                        <th className="text-lg font-bold"></th>
+                        <th className="text-lg border-2 font-bold">Item Name</th>
+                        <th className="text-lg  border-2font-bold">Category</th>
+                        <th className="text-lg border-2 font-bold">Price</th>
+                        <th className="text-lg border-2 font-bold"></th>
                     </tr>
                 </thead>
 
@@ -30,11 +30,11 @@ const AllArtCraft = () => {
                     >
 
                         {/* row 1 */}
-                        <tr>
-                            <th>
+                        <tr className=" border-2">
+                            <th className=" border-2">
                                 {index+1}
                             </th>
-                            <td>
+                            <td className=" border-2">
                                 <div className="flex items-center gap-3">
                                     <div className="avatar">
                                         <div className="mask mask-squircle w-12 h-12">
@@ -47,12 +47,12 @@ const AllArtCraft = () => {
                                     </div>
                                 </div>
                             </td>
-                            <td className="text-lg font-bold">
+                            <td className="text-lg font-bold border-2">
                                 {craft.subcategoryName}
                             </td>
-                            <td className="text-lg font-bold">{craft.price}</td>
-                            <th>
-                            <Link to={`/details/${craft._id}`}><button className="btn bg-orange-600">View Details</button></Link>
+                            <td className="text-lg border-2 font-bold">{craft.price}</td>
+                            <th className="border-2">
+                            <Link to={`/details/${craft._id}`}><button className="btn bg-orange-600 ">View Details</button></Link>
                             </th>
                         </tr>
 

@@ -21,15 +21,15 @@ const Routes = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch(`http://localhost:5000/addCrafts`),
-                // loader1: () => fetch(`http://localhost:5000/category`)
+                loader: () => fetch(`https://art-craft-server-cyan.vercel.app/addCrafts`),
+                // loader1: () => fetch(`https://art-craft-server-cyan.vercel.app/category`)
 
             },
             {
                 path: '/allCraft',
                 // loader: () => fetch('/EstateData.json'),
                 element:<AllArtCraft></AllArtCraft>,
-                loader: () => fetch(`http://localhost:5000/addCrafts`)
+                loader: () => fetch(`https://art-craft-server-cyan.vercel.app/addCrafts`)
 
             },
             {

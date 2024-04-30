@@ -15,7 +15,7 @@ const MyCraft = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/myCraft/${user?.email}`)
+        fetch(`https://art-craft-server-cyan.vercel.app/myCraft/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -45,7 +45,7 @@ const MyCraft = () => {
                     icon: "success"
                 });
 
-                fetch(`http://localhost:5000/delete/${_id}`, {
+                fetch(`https://art-craft-server-cyan.vercel.app/delete/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -116,10 +116,10 @@ const MyCraft = () => {
             <div className="flex justify-center items-center mb-24 ">
                 <details className="dropdown">
                     <summary className="m-1 btn bg-orange-600">Customization <IoIosArrowDown /></summary>
-                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 font-bold rounded-box w-52">
+                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-300  font-bold rounded-box w-52">
                         
-                        <li onClick={() => handleDisplaySort('yes')}><a>Yes</a></li>
-                        <li onClick={() => handleDisplaySort('no')}><a>No</a></li>
+                        <li className="border-2" onClick={() => handleDisplaySort('yes')}><a>Yes</a></li>
+                        <li className="border-2" onClick={() => handleDisplaySort('no')}><a>No</a></li>
                     </ul>
                 </details>
             </div>
