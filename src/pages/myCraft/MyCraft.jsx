@@ -74,20 +74,23 @@ const MyCraft = () => {
 
 
 
-
+ const yesItem = item.filter(item => item.customization === "yes")
+ const noItem = item.filter(item => item.customization === "no")
 
     const handleDisplaySort = sort => {
         // setTemp1(['']);
-        if (sort === 'rating') {
-            const sortedNumbers = item.slice().sort((a, b) => b.rating - a.rating);
-            // setTemp(sortedNumbers);
-            setDisplayAll(sortedNumbers)
+        if (sort === 'yes') {
+            // const sortedNumbers = item.slice().sort((a, b) => b.rating - a.rating);
+            
+            // setDisplayAll(sortedNumbers)
+            setDisplayAll(yesItem);
 
         }
-        else if (sort === 'price') {
-            const sortedNumbers = item.slice().sort((a, b) => b.price - a.price);
-            // setTemp(sortedNumbers);
-            setDisplayAll(sortedNumbers)
+        else if (sort === 'no') {
+            // const sortedNumbers = item.slice().sort((a, b) => b.price - a.price);
+          
+            // setDisplayAll(sortedNumbers)
+            setDisplayAll(noItem);
 
         }
 
@@ -112,11 +115,11 @@ const MyCraft = () => {
 
             <div className="flex justify-center items-center mb-24 ">
                 <details className="dropdown">
-                    <summary className="m-1 btn bg-orange-600">Sort By <IoIosArrowDown /></summary>
+                    <summary className="m-1 btn bg-orange-600">Customization <IoIosArrowDown /></summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 font-bold rounded-box w-52">
                         
-                        <li onClick={() => handleDisplaySort('price')}><a>Price</a></li>
-                        <li onClick={() => handleDisplaySort('rating')}><a>Rating</a></li>
+                        <li onClick={() => handleDisplaySort('yes')}><a>Yes</a></li>
+                        <li onClick={() => handleDisplaySort('no')}><a>No</a></li>
                     </ul>
                 </details>
             </div>
