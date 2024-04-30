@@ -148,7 +148,7 @@ const Home = () => {
                     <div>
                         <p data-aos="fade-down"
                             data-aos-easing="ease-out-cubic"
-                            data-aos-duration="1000" className="text-3xl font-bold rounded-2xl text-center bg-yellow-700 py-8 mt-6 mb-10 text-white"> New Added Craft Items</p>
+                            data-aos-duration="1000" className="text-3xl font-bold rounded-2xl text-center bg-yellow-700 py-8 mt-6 mb-10 text-white">Stat </p>
                     </div>
                     <div className="stats shadow">
 
