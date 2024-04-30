@@ -15,7 +15,7 @@ const Home = () => {
     const ccrafts = crafts.slice(0, 9);
 
 
-    const { user, loading } = useContext(AuthContext);
+    const [loading1, setLoading1] = useState(true);
 
 
 
@@ -25,6 +25,7 @@ const Home = () => {
             .then(response => response.json())
             .then(data => {
                 setCategoryData(data);
+                setLoading1(false)
             })
             .catch(error => {
                 console.error('Error fetching category data:', error);
@@ -55,8 +56,10 @@ const Home = () => {
 
 
     return (
-        <div>
-            <p>{crafts.length}</p>
+        <div className="mt-8">
+            <div className="flex
+            justify-center items-center">{loading1 ? <span className="loading loading-spinner text-info"></span>: <p></p>}</div>
+            {/* <p>{crafts.length}</p> */}
             {/* <p>{categoryData.length}</p> */}
 
             <Slider></Slider>
@@ -87,10 +90,15 @@ const Home = () => {
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="1000" className="text-3xl font-bold rounded-2xl text-center bg-yellow-700 py-8 mt-6 mb-2 text-white"> Art and Craft Categories</p>
                     </div>
+
+
+
+
+
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4   mx-auto" >
-                        {
-                            categoryData?.map(category => <div key={category.index} >
-                                {/* <img  alt="" /> */}
+
+                        {loading1 ? (<span className="loading loading-spinner text-info"></span> ): (
+                            categoryData.map(category => <div key={category.index} >                   
                                 <div className="bg-base-300 shadow-xl text-center   rounded-2xl">
                                     <Link to={`/category/${category.subcategory}`}>
                                         <div className="flex justify-center items-center ">
@@ -105,7 +113,8 @@ const Home = () => {
                                     </Link>
                                 </div>
                             </div>)
-                        }
+                        )}
+                        
 
                     </div>
 
